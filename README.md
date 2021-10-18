@@ -29,33 +29,33 @@ d(E_total)/d(w5)=d(E1+E2)/d(w5)=d(E1+0)/d(w5)=d(E1)/d(out_o1)*d(out_o1)/d(o1)*d(
 Each part is calculated and we finally arrive at : **(out_o1-t1)*(out_o1(1-out_o1))*out_h1**
 We have arrived at the following derivative functions for each weights:
 
-w1- 2 routes are possible. (1)w1>h1>out_h1>w5>o1>out_o1>E1>E_Total.  (2) w1>h1>out_h1>w7>o2>out_o2>E2>E_Total. We have utilized common routes (a) d(E1)/d(Out_h1) and (b) d(E2)/d(Out_h1). The output of these 2 routes are combined and d(out_h1)/d(h1) and d(h1)/d(w1) are added. Hence we get our final output.
+**w1**- 2 routes are possible. (1)w1>h1>out_h1>w5>o1>out_o1>E1>E_Total.  (2) w1>h1>out_h1>w7>o2>out_o2>E2>E_Total. We have utilized common routes (a) d(E1)/d(Out_h1) and (b) d(E2)/d(Out_h1). The output of these 2 routes are combined and d(out_h1)/d(h1) and d(h1)/d(w1) are added. Hence we get our final output.
 
 w1: **(((out_o1-t1)*out_o1*(1-out_o1)*w5)+((out_o2-t2)*out_o2*(1-out_o2)*w7))*out_h1(1-out_h1)*i1**
 
-w2- E_Total w.r.t. w2 follows the same route as w1 except the inital weight of w2. Hence we take the entire equation and just multiply by i2 at the end instead of i1
+**w2**- E_Total w.r.t. w2 follows the same route as w1 except the inital weight of w2. Hence we take the entire equation and just multiply by i2 at the end instead of i1
 
 w2: **(((out_o1-t1)*out_o1*(1-out_o1)*w5)+((out_o2-t2)*out_o2*(1-out_o2)*w7))*out_h1(1-out_h1)*i2**
 
-w3- E_Total w.r.t. w2 starts from w3>h2>out_h2> and then follows 2 routes (a)w6>o1_out_o1>E1>E_Total (b)w8>o2>out_o2>E2>E_Total. The whole route is worked out and we get the below:
+**w3**- E_Total w.r.t. w2 starts from w3>h2>out_h2> and then follows 2 routes (a)w6>o1_out_o1>E1>E_Total (b)w8>o2>out_o2>E2>E_Total. The whole route is worked out and we get the below:
 
 w3: **((out_o1-t1)*out_o1*(1-out_o1)*w6)+((out_o2-t2)*out_o2*(1-out_o2)*w8))*Out_h2(1-Out_h2)*i1**
 
-w4-This follows the same route as w3 except the beginning weight of w3. Here we the take same equation of w3 and multiply by i2 at the end instead of i1.
+**w4**-This follows the same route as w3 except the beginning weight of w3. Here we the take same equation of w3 and multiply by i2 at the end instead of i1.
 
 w4: **((out_o1-t1)*out_o1*(1-out_o1)*w6)+((out_o2-t2)*out_o2*(1-out_o2)*w8))*Out_h2(1-Out_h2)*i2**
 
-w5- This is already explained at the beginning
+**w5**- This is already explained at the beginning
 
-w6-This follows the same route as w5 except the starting weight of w6 instead of w5. Hence we take the same equation and multiply by out_h2 instead of out_h1 at the end.
+**w6**-This follows the same route as w5 except the starting weight of w6 instead of w5. Hence we take the same equation and multiply by out_h2 instead of out_h1 at the end.
 
 w6: **(out_o1-t1)*(out_o1(1-out_o1))*out_h2**
 
-w7-This follows the route of w7>o2>out_o2>E2>E_Total.
+**w7**-This follows the route of w7>o2>out_o2>E2>E_Total.
 
 w7: **(out_o2-t2)*out_o2(1-out_o2)*out_h1**
 
-w8-This follows the same route as w7 except the beginning weight of w8. Hence we take w7's equation and multiply by out_h2 instead of out_h1 at the end.
+**w8**-This follows the same route as w7 except the beginning weight of w8. Hence we take w7's equation and multiply by out_h2 instead of out_h1 at the end.
 
 w8: **(out_o2-t2)*out_o2(1-out_o2)*out_h2**
 
